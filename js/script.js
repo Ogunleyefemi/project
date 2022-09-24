@@ -34,3 +34,11 @@ function wordCounter(text) {
     return wordCount;
   }
   
+  //function to check offensive words
+  let badWords = ["zoinks", "muppeteer", "biffaroni","loopdaloop"];
+  let newWord = "";
+  function offensiveWords(bad){
+    if(badWords.includes(bad)){
+        
+    }
+  }
