@@ -87,3 +87,9 @@ $(document).ready(function(){
   usedWords.forEach(function(element){
     most.push(element);
   })
+  most.forEach(function(element, index){
+    let str = "<li>"
+    $("#most").append(str + element + " " )
+  })
+    });
+  });
