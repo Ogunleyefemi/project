@@ -51,3 +51,7 @@ function wordCounter(text) {
 }
 
 //   function to bold text
+function boldPassage(word, text) {
+    if(noInputtedWord(word,text)){
+      return ""
+    }
