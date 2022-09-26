@@ -61,3 +61,4 @@ function boldPassage(word, text) {
         if (element.toLowerCase().includes(word.toLowerCase()))  {
             htmlString = htmlString.concat("<b>" + element + "</b>");
         } else {
+            htmlString = htmlString.concat(element);
