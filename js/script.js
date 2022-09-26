@@ -49,3 +49,5 @@ function wordCounter(text) {
     let finalWord = nonOffensive.join(" ");
     return finalWord;
 }
+
+//   function to bold text
