@@ -78,8 +78,10 @@ $(document).ready(function(){
       const word = $("#word").val();
       const wordCount = wordCounter(text);
       const occurrencesOfWord = numberOfOccurrencesInText(word, text);
+      const nonOffensive = offensiveWords(words);
       $("#total-count").html(wordCount);
       $("#selected-count").html(occurrencesOfWord);
+      $("#offensive").html(nonOffensive);
       $("#bolded-passage").html(boldPassage(word, text));
        // most used words
   let most = []
