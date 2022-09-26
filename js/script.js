@@ -81,3 +81,9 @@ $(document).ready(function(){
       $("#total-count").html(wordCount);
       $("#selected-count").html(occurrencesOfWord);
       $("#bolded-passage").html(boldPassage(word, text));
+       // most used words
+  let most = []
+  let usedWords = text.split(" ");
+  usedWords.forEach(function(element){
+    most.push(element);
+  })
