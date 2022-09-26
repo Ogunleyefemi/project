@@ -6,8 +6,7 @@ function noInputtedWord(word,text){
 
     //function to counter total number of words in a text
 function wordCounter(text) {
-    if (text.trim().length === 0) {
-      
+    if (text.trim().length === 0){
     }
     let wordCount = 0;
     const wordArray = text.split(" ");
@@ -36,8 +35,8 @@ function wordCounter(text) {
   
   //function to check offensive words
   let badWords = ["zoinks", "muppeteer", "biffaroni","loopdaloop"];//offensive words
-  function offensiveWords(words){
-    let newWord = words.split(" ");
+  function offensiveWords(word){
+    let newWord = word.split(" ");
     nonOffensive = [];
     newWord.forEach(function(element){
         if(badWords.includes(element)){
@@ -45,7 +44,7 @@ function wordCounter(text) {
         }else{
             nonOffensive.push(element);
         }
-    })
+    });
     let finalWord = nonOffensive.join(" ");
     return finalWord;
 }
@@ -72,17 +71,17 @@ function boldPassage(word, text) {
 
 //   UI LOGIC
 $(document).ready(function(){
-    $("project").submit(function(event){
+    $("#project").submit(function(event){
       event.preventDefault();
-      const text = $("#text-passage").val();
+      const text = $("#text").val();
       const word = $("#word").val();
       const wordCount = wordCounter(text);
       const occurrencesOfWord = numberOfOccurrencesInText(word, text);
-      const nonOffensive = offensiveWords(words);
-      $("#total-count").html(wordCount);
-      $("#selected-count").html(occurrencesOfWord);
+      const nonOffensive = offensiveWords(text);
+      $("#total").html(wordCount);
+      $("#selected").html(occurrencesOfWord);
       $("#offensive").html(nonOffensive);
-      $("#bolded-passage").html(boldPassage(word, text));
+      $("#bold").html(boldPassage(word, text));
        // most used words
   let most = []
   let usedWords = text.split(" ");
