@@ -55,3 +55,4 @@ function boldPassage(word, text) {
     if(noInputtedWord(word,text)){
       return ""
     }
+    let htmlString = "<p>";
