@@ -79,3 +79,5 @@ $(document).ready(function(){
       const wordCount = wordCounter(text);
       const occurrencesOfWord = numberOfOccurrencesInText(word, text);
       $("#total-count").html(wordCount);
+      $("#selected-count").html(occurrencesOfWord);
+      $("#bolded-passage").html(boldPassage(word, text));
