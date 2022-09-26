@@ -69,3 +69,8 @@ function boldPassage(word, text) {
     });
     return htmlString + "</p>";
   }
+
+//   UI LOGIC
+$(document).ready(function(){
+    $("form#word-counter").submit(function(event){
+      event.preventDefault();
