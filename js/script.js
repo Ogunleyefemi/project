@@ -35,7 +35,7 @@ function wordCounter(text) {
   }
   
   //function to check offensive words
-  let badWords = ["zoinks", "muppeteer", "biffaroni","loopdaloop"];
+  let badWords = ["zoinks", "muppeteer", "biffaroni","loopdaloop"];//offensive words
   function offensiveWords(words){
     let newWord = words.split(" ");
     nonOffensive = [];
@@ -72,7 +72,7 @@ function boldPassage(word, text) {
 
 //   UI LOGIC
 $(document).ready(function(){
-    $("form#word-counter").submit(function(event){
+    $("project").submit(function(event){
       event.preventDefault();
       const text = $("#text-passage").val();
       const word = $("#word").val();
@@ -91,7 +91,7 @@ $(document).ready(function(){
   })
   most.forEach(function(element, index){
     let str = "<li>"
-    $("#most").append(str + element + " " )
+    $("#most").append(str + element + " " + index)
   })
-    });
+    })
   });
