@@ -15,18 +15,18 @@
         <h2>Text Analyzer</h2>
       <form id="word-counter">
         <div class="form-group">
-          <p>Input a text passage to get a total word count:</p>
+          <p>Input a text you wish to count:</p>
           <textarea id="text-passage" name="text-passage" class="form-control" required></textarea>
-          <p>Optionally enter a word to count the number of times it occurs in the passage:</p>
+          <p>Input your preferred word to count in the text above :</p>
           <input type="text" id="word" name="word" class="form-control">
           <br>
-          <button type="submit" class="btn btn-success">Submit Survey</button>
+          <button type="submit" class="btn btn-light">Check</button><br>
         </div>
       </form>
       <p>Total Word Count: <span id="total-count"></span></p>
       <br>
-      <p>Selected Word Count: <span id="selected-count"></span></p>
-      <span id="bolded-passage"></span><br>
+      <p>Selected Word Count: <span id="selected-count"></span></p><br>
+      <p>Bolded-word :</p><span id="bolded-passage"></span><br><br>
       <p>Most used word :</p>
       <ul>
         <li><span id="most"></span></li>
