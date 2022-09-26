@@ -36,9 +36,16 @@ function wordCounter(text) {
   
   //function to check offensive words
   let badWords = ["zoinks", "muppeteer", "biffaroni","loopdaloop"];
-  let newWord = "";
-  function offensiveWords(bad){
-    if(badWords.includes(bad)){
-        
-    }
-  }
+  function offensiveWords(words){
+    let newWord = words.split(" ");
+    nonOffensive = [];
+    newWord.forEach(function(element){
+        if(badWords.includes(element)){
+            nonOffensive.push("****")
+        }else{
+            nonOffensive.push(element);
+        }
+    })
+    let finalWord = nonOffensive.join(" ");
+    return finalWord;
+}
