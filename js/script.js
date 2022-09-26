@@ -56,3 +56,4 @@ function boldPassage(word, text) {
       return ""
     }
     let htmlString = "<p>";
+    let textArray = text.split(" ");
