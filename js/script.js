@@ -60,3 +60,4 @@ function boldPassage(word, text) {
     textArray.forEach(function(element, index) {
         if (element.toLowerCase().includes(word.toLowerCase()))  {
             htmlString = htmlString.concat("<b>" + element + "</b>");
+        } else {
