@@ -128,7 +128,7 @@ $(document).ready(function(){
       $("#selected").html(occurrencesOfWord);
       $("#offensive").html(nonOffensive);
       $("#bold").html(boldPassage(word, text));
-      $("#most").html(top);
+      $("#most").append(top);
      
 
     })
